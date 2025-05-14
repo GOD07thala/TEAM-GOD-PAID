@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>91 Club Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black min-h-screen text-white">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6 text-center text-yellow-400">⚡ 91 Club 2-Level Prediction</h1>
+
+    <div class="bg-gray-800 rounded-xl p-6 shadow-xl mb-6 text-center">
+      <h2 class="text-xl font-semibold mb-2">⏱ Live Timer (91 Club)</h2>
+      <div id="timer" class="text-4xl font-mono text-green-400">00:00</div>
+    </div>
+
+    <div class="bg-gray-700 rounded-xl p-6 shadow-xl mb-6 text-center">
+      <h2 class="text-xl font-semibold mb-4">🎯 Auto Prediction</h2>
+      <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Generate Prediction</button>
+      <p class="mt-4 text-lg">Prediction: <span id="prediction" class="font-bold text-blue-300">--</span></p>
+    </div>
+
+    <div class="bg-gray-700 rounded-xl p-6 shadow-xl">
+      <h2 class="text-xl font-semibold mb-4">📜 Prediction History</h2>
+      <div id="history" class="space-y-2">
+        <div class="bg-gray-800 p-3 rounded-lg flex justify-between">
+          <span>Prediction: GREEN</span>
+          <span class="text-green-400 font-bold">WIN</span>
+        </div>
+        <div class="bg-gray-800 p-3 rounded-lg flex justify-between">
+          <span>Prediction: RED</span>
+          <span class="text-red-400 font-bold">LOSS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
